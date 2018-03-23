@@ -1,63 +1,91 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>{{category | uppercase}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content fullscreen parallax-header>
-  <div class="header-image"></div>
+  <div [class.header-events-image]="category == 'events' ? true: false" [class.header-image]="category == 'posts' ? true : false" [class.header-news-image]="category == 'news' ? true : false"></div>
 
   <div class="main-content">
 
     <ion-segment [(ngModel)]="category">
-      <ion-segment-button value="gear">
-        Gear
+      <ion-segment-button value="events">
+        Events
       </ion-segment-button>
-      <ion-segment-button value="clothing">
-        Clothing
+      <ion-segment-button value="posts">
+        Posts
       </ion-segment-button>
-      <ion-segment-button value="nutrition">
-        Nutrition
+      <ion-segment-button value="news">
+        News
       </ion-segment-button>
     </ion-segment>
+    <div [ngSwitch]="category">
+      <div *ngSwitchCase="'posts'">
+        <ion-card *ngFor="let card of cards">
 
-    <ion-card *ngFor="let card of cards">
+          <ion-item>
+            <ion-avatar item-left>
+              <img src="assets/imgs/marty-avatar.png" />
+            </ion-avatar>
+            <h2>John Doe</h2>
+            <p>March 23, 2018</p>
+          </ion-item>
 
-      <ion-item>
-        <ion-avatar item-left>
-          <img src="https://avatars.io/facebook/joshua.morony" />
-        </ion-avatar>
-        <h2>Josh Morony</h2>
-        <p>November 5, 1955</p>
-      </ion-item>
+          <img src="assets/imgs/tmntr.jpg" />
 
-      <img src="http://placehold.it/500x200" />
+          <ion-card-content>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </ion-card-content>
 
-      <ion-card-content>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col>
+          </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <button ion-button icon-left clear small>
-            <ion-icon name="thumbs-up"></ion-icon>
-            <div>12 Likes</div>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-button icon-left clear small>
-            <ion-icon name="text"></ion-icon>
-            <div>4 Comments</div>
-          </button>
-        </ion-col>
-        <ion-col center text-center>
-          <ion-note>
-            11h ago
-          </ion-note>
-        </ion-col>
-      </ion-row>
+        </ion-card>
+      </div>
+      <div *ngSwitchCase="'events'">
+        <ion-card *ngFor="let card of cards">
+          <img src="assets/imgs/event.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Pace Mobile App Design Contest 6.0/Hackathon
+            </ion-card-title>
+            <p>
+              The Pace Mobile App Design Contest is based on the popular hackathon. Participants form teams to create a concept mobile application using any tool
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+      <div *ngSwitchCase="'news'" class="card-background-page">
 
-    </ion-card>
+        <ion-card *ngFor="let card of cards">
+          <ion-card>
+            <img src="assets/imgs/card-saopaolo.png"/>
+            <div class="card-title">
+              Pace Students Spend Spring Break Helping Storm Victims
+            </div>
+            <div class="card-subtitle">Instead of partying and plenty of fun, 16 Pace University students spent their Spring Break helping residents</div>
+          </ion-card>
+        </ion-card>
+      </div>
+    </div>
 
   </div>
 </ion-content>

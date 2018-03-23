@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   cards: any;
-  category: string = 'gear';
+  category: string = 'posts';
 
   constructor(public navCtrl: NavController) {
 
