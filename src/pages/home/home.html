@@ -10,13 +10,13 @@
   <div class="main-content">
 
     <ion-segment [(ngModel)]="category">
-      <ion-segment-button value="events">
+      <ion-segment-button id="{{category == 'events' ? 'event-segment': ''}}" value="events">
         Events
       </ion-segment-button>
-      <ion-segment-button value="posts">
+      <ion-segment-button id="{{category == 'posts' ? 'posts-segment': ''}}" value="posts">
         Posts
       </ion-segment-button>
-      <ion-segment-button value="news">
+      <ion-segment-button id="{{category == 'news' ? 'news-segment': ''}}" value="news">
         News
       </ion-segment-button>
     </ion-segment>
