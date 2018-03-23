@@ -1,12 +1,49 @@
 [
-    {
-        "image" : "https://i.imgur.com/7G7WEpz.jpg",
-        "title": "CS632 Textbook",
-        "tags": ["cs632", "textbook"],
-        "poster": "Haseeb",
-        "price": 30
-    }, 
-    {
-
-    }
+  {
+    "image": "https://i.imgur.com/7G7WEpz.jpg",
+    "title": "CS632 Textbook",
+    "tags": ["cs632", "textbook"],
+    "poster": "Haseeb",
+    "price": 2
+  },
+  {
+    "image":
+      "https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i300/v1521646259/mfvv1dpirxfvxkljfbie.jpg",
+    "title": "Sociology Textbook",
+    "tags": ["cs632", "textbook"],
+    "poster": "Varad",
+    "price": 55
+  },
+  {
+    "image":
+      "https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1498478360/lh0f8bbv7fioj1ovnqo0.jpg",
+    "title": "Got Complete Collection",
+    "tags": ["cs632", "textbook"],
+    "poster": "Suman",
+    "price": 100
+  },
+  {
+    "image":
+      "https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i300/v1516728137/oly3thx0bw0cwj5cykln.jpg",
+    "title": "Human Anatomy & Physiology Textbook",
+    "tags": ["cs632", "textbook"],
+    "poster": "Ronak",
+    "price": 25
+  },
+  {
+    "image":
+      "https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1521208149/naxgk7yliboyuwvfscit.jpg",
+    "title": "Kevin Hart NYC Standup Tickets",
+    "tags": ["cs632", "textbook"],
+    "poster": "John",
+    "price": 150
+  },
+  {
+    "image":
+      "https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1497917404/mih6mdwpklyswoozcq9y.jpg",
+    "title": "Graduation Cap and Gown",
+    "tags": ["cs632", "textbook"],
+    "poster": "Mark",
+    "price": 40
+  }
 ]

@@ -29,85 +29,15 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-6>
+      <ion-col col-6 *ngFor="let l of listings; let i = index" (click)="productDetails(i)">
         <ion-card>
-          <img class="w-img" src="https://i.imgur.com/7G7WEpz.jpg" />
+          <img class="w-img" src="{{l.image}}" />
           <ion-card-content class="w-card-content">
             <ion-card-title class="w-card-title w-price">
-              $2
+              ${{l.price}}
             </ion-card-title>
             <ion-card-title class="w-card-title">
-              CS632 Notes
-            </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-6>
-        <ion-card>
-          <img class="w-img" src="https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i300/v1521646259/mfvv1dpirxfvxkljfbie.jpg"
-          />
-          <ion-card-content class="w-card-content">
-            <ion-card-title class="w-card-title w-price">
-              $55
-            </ion-card-title>
-            <ion-card-title class="w-card-title">
-              Sociology Textbook
-            </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-6>
-        <ion-card>
-          <img class="w-img" src="https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1498478360/lh0f8bbv7fioj1ovnqo0.jpg"
-          />
-          <ion-card-content class="w-card-content">
-            <ion-card-title class="w-card-title w-price">
-              $100
-            </ion-card-title>
-            <ion-card-title class="w-card-title">
-              GoT Complete Collections
-            </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-6>
-        <ion-card>
-          <img class="w-img" src="https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i300/v1516728137/oly3thx0bw0cwj5cykln.jpg"
-          />
-          <ion-card-content class="w-card-content">
-            <ion-card-title class="w-card-title w-price">
-              $25
-            </ion-card-title>
-            <ion-card-title class="w-card-title">
-              Human Anatomy & Physiology Textbook
-            </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-6>
-        <ion-card>
-          <img class="w-img" src="https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1521208149/naxgk7yliboyuwvfscit.jpg"
-          />
-          <ion-card-content class="w-card-content">
-            <ion-card-title class="w-card-title w-price">
-              $150
-            </ion-card-title>
-            <ion-card-title class="w-card-title">
-              Kevin Hart NYC Standup Tickets
-            </ion-card-title>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col col-6>
-        <ion-card>
-          <img class="w-img" src="https://fivemiles-res.cloudinary.com/image/upload/f_auto,t_i800/v1497917404/mih6mdwpklyswoozcq9y.jpg"
-          />
-          <ion-card-content class="w-card-content">
-            <ion-card-title class="w-card-title w-price">
-              $40
-            </ion-card-title>
-            <ion-card-title class="w-card-title">
-              Graduation Cap and Gown
+              {{l.title}}
             </ion-card-title>
           </ion-card-content>
         </ion-card>
