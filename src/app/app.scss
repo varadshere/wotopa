@@ -70,3 +70,44 @@
 .col {
   text-align: center;
 }
+
+.ion-ios-flame {
+  color: #fda648 !important;
+  + .tab-button-text {
+    color: #fda648 !important;
+  }
+}
+
+.ion-ios-flame-outline {
+  color: #fda648 !important;
+  + .tab-button-text {
+    color: #fda648 !important;
+  }
+}
+
+.ion-ios-cart-outline {
+  color: #59baed !important;
+  + .tab-button-text {
+    color: #59baed !important;
+  }
+}
+
+.ion-ios-cart {
+  color: #59baed !important;
+  + .tab-button-text {
+    color: #59baed !important;
+  }
+}
+.ion-ios-contacts {
+  color: #36c73f !important;
+  + .tab-button-text {
+    color: #36c73f !important;
+  }
+}
+
+.ion-ios-contacts-outline {
+  color: #36c73f !important;
+  + .tab-button-text {
+    color: #36c73f !important;
+  }
+}
