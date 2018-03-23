@@ -1,0 +1,85 @@
+<!--
+  Generated template for the LoginSignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login-signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img style="position: absolute" src="assets/imgs/gradient.jpeg">
+
+  <div padding>
+    <ion-segment [(ngModel)]="login" mode="md">
+      <ion-segment-button value="login">
+        Login
+      </ion-segment-button>
+      <ion-segment-button value="signup">
+        Signup
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="case">
+    <ion-list *ngSwitchCase="'login'">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item mode="ios">
+              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
+              <ion-input type="text" placeholder="Email" name="email" required></ion-input>
+            </ion-item>
+
+            <ion-item mode="ios">
+              <ion-label> <ion-icon name="ios-unlock-outline"></ion-icon></ion-label>
+              <ion-input type="password" placeholder="Password" name="password" required></ion-input>
+            </ion-item>
+
+            <div style="text-align: center; margin-top: 20px">
+              <button ion-button class="login-button" (click)="login()">Login</button>
+            </div>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'signup'">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item mode="ios">
+              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
+              <ion-input   type="text" placeholder="Email" name="email" required></ion-input>
+            </ion-item>
+            <ion-item mode="ios">
+              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
+              <ion-input   type="text" placeholder="Full Name" name="email" required></ion-input>
+            </ion-item>
+
+            <ion-item mode="ios">
+              <ion-label> <ion-icon name="ios-unlock-outline"></ion-icon></ion-label>
+              <ion-input  type="password" placeholder="Password" name="password" required></ion-input>
+            </ion-item>
+            <div style="text-align: center; margin-top: 20px">
+              <button ion-button class="login-button" (click)="login()">Login</button>
+            </div>
+
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+
+</ion-content>
