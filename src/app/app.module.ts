@@ -12,7 +12,8 @@ import { MarketplacePage } from "../pages/marketplace/marketplace";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { HttpModule } from "@angular/http";
-import {LoginSignupPage} from "../pages/login-signup/login-signup";
+import { LoginSignupPage } from "../pages/login-signup/login-signup";
+import { SettingsPage } from "../pages/settings/settings";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {LoginSignupPage} from "../pages/login-signup/login-signup";
     HomePage,
     TabsPage,
     MarketplacePage,
-    LoginSignupPage
+    LoginSignupPage,
+    SettingsPage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp), HttpModule],
   bootstrap: [IonicApp],
@@ -33,7 +35,8 @@ import {LoginSignupPage} from "../pages/login-signup/login-signup";
     HomePage,
     TabsPage,
     MarketplacePage,
-    LoginSignupPage
+    LoginSignupPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

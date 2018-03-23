@@ -29,7 +29,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-6 *ngFor="let l of listings; let i = index" (click)="productDetails(i)">
+      <ion-col col-6 *ngFor="let l of listings; let i = index">
         <ion-card>
           <img class="w-img" src="{{l.image}}" />
           <ion-card-content class="w-card-content">

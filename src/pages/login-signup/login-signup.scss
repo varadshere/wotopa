@@ -1,3 +1,30 @@
 page-login-signup {
+  ion-item {
+    background-color: transparent !important;
+  }
+  .text-input::-moz-placeholder {
+    color: white;
+  }
 
+  .text-input:-ms-input-placeholder {
+    color: white;
+  }
+
+  .text-input::-webkit-input-placeholder {
+    text-indent: 0;
+    color: white;
+  }
+  .label {
+    color: white !important;
+  }
+
+  .segment-button {
+    &.segment-activated {
+      color: white;
+    }
+  }
+
+  .button-md {
+    background-color: #59baed;
+  }
 }

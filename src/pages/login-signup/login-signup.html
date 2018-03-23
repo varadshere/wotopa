@@ -5,17 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>login-signup</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
   <img style="position: absolute" src="assets/imgs/gradient.jpeg">
-
+  <ion-row>
+    <ion-col style="font-family: cursive;font-size: 12rem;text-align:center;color: white;">W</ion-col>
+  </ion-row>
   <div padding>
     <ion-segment [(ngModel)]="login" mode="md">
       <ion-segment-button value="login">
@@ -33,13 +30,17 @@
         <ion-col>
           <ion-list inset>
 
-            <ion-item mode="ios">
-              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
+            <ion-item style="background-color: none;" mode="ios">
+              <ion-label>
+                <ion-icon name="ios-person-outline"></ion-icon>
+              </ion-label>
               <ion-input type="text" placeholder="Email" name="email" required></ion-input>
             </ion-item>
 
-            <ion-item mode="ios">
-              <ion-label> <ion-icon name="ios-unlock-outline"></ion-icon></ion-label>
+            <ion-item style="background-color: none;" mode="ios">
+              <ion-label>
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+              </ion-label>
               <ion-input type="password" placeholder="Password" name="password" required></ion-input>
             </ion-item>
 
@@ -58,18 +59,24 @@
         <ion-col>
           <ion-list inset>
 
-            <ion-item mode="ios">
-              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
-              <ion-input   type="text" placeholder="Email" name="email" required></ion-input>
+            <ion-item style="background-color: none;" mode="ios">
+              <ion-label>
+                <ion-icon name="ios-person-outline"></ion-icon>
+              </ion-label>
+              <ion-input type="text" placeholder="Email" name="email" required></ion-input>
             </ion-item>
             <ion-item mode="ios">
-              <ion-label> <ion-icon name="ios-person-outline"></ion-icon></ion-label>
-              <ion-input   type="text" placeholder="Full Name" name="email" required></ion-input>
+              <ion-label>
+                <ion-icon name="ios-person-outline"></ion-icon>
+              </ion-label>
+              <ion-input type="text" placeholder="Full Name" name="email" required></ion-input>
             </ion-item>
 
-            <ion-item mode="ios">
-              <ion-label> <ion-icon name="ios-unlock-outline"></ion-icon></ion-label>
-              <ion-input  type="password" placeholder="Password" name="password" required></ion-input>
+            <ion-item style="background-color: none;" mode="ios">
+              <ion-label>
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+              </ion-label>
+              <ion-input type="password" placeholder="Password" name="password" required></ion-input>
             </ion-item>
             <div style="text-align: center; margin-top: 20px">
               <button ion-button class="login-button" (click)="login()">Login</button>
