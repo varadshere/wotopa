@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,60 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.w-item {
+  > .item-inner {
+    border-bottom: none !important;
+  }
+}
+
+.card {
+  box-shadow: none !important;
+}
+.w-img {
+  border-radius: 12px;
+}
+
+.w-card-content {
+  padding: 0;
+}
+
+.w-card-title {
+  font-size: 1.5rem;
+  padding: 0;
+  text-align: center;
+}
+
+.w-price {
+  font-weight: 800;
+}
+
+.header-md::after {
+  background-image: none;
+}
+
+.toolbar-background-md {
+  background: white;
+}
+
+.w-icon {
+  font-size: 5rem;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+  &.ion-ios-apps {
+    background-color: #fed230;
+  }
+
+  &.ion-md-trending-up {
+    background-color: #fc5a9a;
+  }
+
+  &.ion-ios-add-circle {
+    background-color: #1dabfb;
+  }
+}
+
+.col {
+  text-align: center;
+}
